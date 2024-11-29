@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} {% endblock title %}
+{% block content %}
+<div class="site-section bg-light" id="services-section">
+    <div class="container">
+      <div class="row ">
+        <div class="col-12 mb-5 position-relative">
+          <h2 class="section-title text-center mb-5">Services</h2>
+        </div>
+        {% for services in services %}
+        <div class="col-md-6 mb-4">
+          <div class="service d-flex h-100">
+            <div class="service-number mr-4"><span class="icon-glass"></span></div>
+            <div class="service-about">
+              <h3>{{ services.title }}</h3>
+              <p>{{ services.description }}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+       
+  
+      </div>
+    </div>
+  </div>
+  {% endblock content%}
