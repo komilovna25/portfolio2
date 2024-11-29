@@ -26,7 +26,7 @@ class Contact(models.Model):
     first_name = models.CharField(max_length=50)
     full_name = models.CharField(max_length=50)
     email = models.EmailField()
-    content = models.TextField()
+    # content = models.TextField()
    
     def __str__(self):
          return f"{self.first_name} {self.email}"

@@ -5,6 +5,10 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
+
+BOT_TOKEN="7604858672:AAGcjAexD7O_yFZ68jiCTUs_6GqKA9ahqiU"
+CHAT_ID=7150015583
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
